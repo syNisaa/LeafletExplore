@@ -44,7 +44,7 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
 
-    <title>Plot Listing HTML5 Website Template</title>
+    <title>EXPLORE INDONESIA - BALI</title>
 
     <!-- Bootstrap core CSS -->
     <link href="{{asset('css/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
@@ -54,13 +54,7 @@
     <link rel="stylesheet" href="{{asset('css/assets/css/templatemo-plot-listing.css')}}">
     <link rel="stylesheet" href="{{asset('css/assets/css/animated.css')}}">
     <link rel="stylesheet" href="{{asset('css/assets/css/owl.css')}}">
-    <!--
 
-TemplateMo 564 Plot Listing
-
-https://templatemo.com/tm-564-plot-listing
-
--->
 </head>
 
 <body>
@@ -85,13 +79,15 @@ https://templatemo.com/tm-564-plot-listing
                 <div class="col-12">
                     <nav class="main-nav">
                         <!-- ***** Logo Start ***** -->
-                        <a href="index.html" class="logo"></a>
+                        <a href="/" class="logo">
+                        <img src="{{asset('css/assets/images/logo.png')}}" alt="">
+                        </a>
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
                             <li><a href="/" class="active">General Indonesia</a></li>
                             <li><a href="/bali">Discover Bali</a></li>
-                            <li><a href="listing.html">All Data</a></li>
+                            <li><a href="/alldata">All Data</a></li>
                             <li><a href="/team">Our Team</a></li>
                             <li>
                                 <div class="main-white-button"><a href="/admin">ADMIN</a></div>
@@ -121,7 +117,7 @@ https://templatemo.com/tm-564-plot-listing
                                         <div class="first-thumb active">
                                             <div class="thumb">
                                                 <span class="icon"><img
-                                                        src="{{asset('css/assets/images/search-icon-02.png')}}"
+                                                        src="{{asset('css/assets/images/provinsi.png')}}"
                                                         alt=""></span>
                                                 Provinsi
                                             </div>
@@ -129,26 +125,25 @@ https://templatemo.com/tm-564-plot-listing
                                         <div>
                                             <div class="thumb">
                                                 <span class="icon"><img
-                                                        src="{{asset('css/assets/images/search-icon-03.png')}}"
+                                                        src="{{asset('css/assets/images/gempa.png')}}"
                                                         alt=""></span>
-                                                <!-- Bahasa Daerah, Makanan Daerah Penduduk-->
                                                 Gempa Bumi
                                             </div>
                                         </div>
                                         <div>
                                             <div class="thumb">
                                                 <span class="icon"><img
-                                                        src="{{asset('css/assets/images/search-icon-04.png')}}"
+                                                        src="{{asset('css/assets/images/gunung.png')}}"
                                                         alt=""></span>
-                                                ---
+                                                Gunung Berapi Indonesia
                                             </div>
                                         </div>
                                         <div class="last-thumb">
                                             <div class="thumb">
                                                 <span class="icon"><img
-                                                        src="{{asset('css/assets/images/search-icon-05.png')}}"
+                                                        src="{{asset('css/assets/images/bandara.png')}}"
                                                         alt=""></span>
-                                                Traveling
+                                                Bandara Internasional
                                             </div>
                                         </div>
                                     </div>
@@ -162,13 +157,7 @@ https://templatemo.com/tm-564-plot-listing
                                                         <div class="col-lg-5 align-self-center">
                                                             <div class="left-text">
                                                                 <h4>38 - Provinsi Di Indonesia </h4>
-                                                                <p>You can feel free to download, edit and apply this
-                                                                    template for your website. Please tell your friends
-                                                                    about TemplateMo website.</p>
-                                                                <div class="main-white-button"><a
-                                                                        href="/exploreProvinsi"><i
-                                                                            class="fa fa-eye"></i> Explore More</a>
-                                                                </div>
+                                                                <p>Indonesia terdiri dari 38 provinsi yang membentang dari Sabang hingga Merauke, mencakup keindahan alam dan kekayaan sumber daya.</p>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-7 align-self-center container">
@@ -191,7 +180,7 @@ https://templatemo.com/tm-564-plot-listing
                                                                             .latitude, province
                                                                             .longitude
                                                                         ]).addTo(map2);
-                                                                        marker.bindPopup(province.name);
+                                                                        marker.bindPopup("<b>" + province.name + "</b><br> Luas Provinsi :" + province.luas + "<br> Jumlah Penduduk Provinsi :" + province.populasi + "<br> Kepdatan /km Provinsi :" + province.kepadatan + "<br> Penduduk Perempuan :" + province.jumlah_perempuan+ "<br> Penduduk Laki Laki:" + province.jumlah_pria);
                                                                     });
 
                                                                 </script>
@@ -206,15 +195,8 @@ https://templatemo.com/tm-564-plot-listing
                                                     <div class="row">
                                                         <div class="col-lg-5 align-self-center">
                                                             <div class="left-text">
-                                                                <h4>Bencana Alam - Gempa Bumi</h4>
-                                                                <p>Plot Listing is a responsive Bootstrap 5 website
-                                                                    template that included 4 different HTML pages. This
-                                                                    template is provided by TemplateMo website. You can
-                                                                    apply this layout for your static or dynamic CMS
-                                                                    websites.</p>
-                                                                <div class="main-white-button"><a href="#"><i
-                                                                            class="fa fa-eye"></i> Discover More</a>
-                                                                </div>
+                                                                <h4>Bencana Alam -15 Gempa Bumi</h4>
+                                                                <p>Gempa bumi merupakan bencana alam yang sering terjadi di Indonesia, berikut 15 data gempa bumi 1 tahun terakhir <br><b><small>Source : https://github.com/infoBMKG</small></b></p>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-7 align-self-center">
@@ -269,13 +251,9 @@ https://templatemo.com/tm-564-plot-listing
                                                     <div class="row">
                                                         <div class="col-lg-5 align-self-center">
                                                             <div class="left-text">
-                                                                <h4>Gunung Berapi Aktif Di Indonesia</h4>
-                                                                <p>Did you know? You can get the best free HTML
-                                                                    templates on Too CSS blog. Visit the blog pages and
-                                                                    explore fresh and latest website templates.</p>
-                                                                <div class="main-white-button"><a href="listing.html"><i
-                                                                            class="fa fa-eye"></i> More Listing</a>
-                                                                </div>
+                                                                <h4>99 - Gunung Berapi Aktif Di Indonesia</h4>
+                                                                <p>Indonesia memiliki 99 gunung berapi aktif yang menjadi bagian dari Cincin Api Pasifik, menawarkan keindahan sekaligus tantangan alam. Menurut data, gunung berapi ini tersebar banyak dipulau jawa dan sumatra</p>
+                                                                
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-7 align-self-center">
@@ -315,9 +293,9 @@ https://templatemo.com/tm-564-plot-listing
                                                 <div class="row">
                                                     <div class="col-lg-5 align-self-center">
                                                     <div class="left-text">
-                                                        <h4>17 - Bandara Di Indonesia</h4>
-                                                        <p>Image credits go to Unsplash website that provides free stock photos for anyone. Images used in this Plot Listing template are from Unsplash.</p>
-                                                        <div class="main-white-button"><a href="#"><i class="fa fa-eye"></i> Discover More</a></div>
+                                                        <h4>17 - Bandara Internasional Di Indonesia</h4>
+                                                        <p>Indonesia memiliki 17 bandara internasional yang tersebar di berbagai wilayah, berperan sebagai pintu gerbang utama bagi wisatawan dan pelaku bisnis dari dalam maupun luar negeri. Bandara-bandara ini mendukung mobilitas, pariwisata, dan pertumbuhan ekonomi di nusantara.</p>
+                                                        
                                                     </div>
                                                     </div>
                                                     <div class="col-lg-7 align-self-center">
@@ -362,67 +340,11 @@ https://templatemo.com/tm-564-plot-listing
         </div>
     </div>
 
-
-
     <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="about">
-                        <div class="logo">
-                            <img src="{{asset('css/assets/images/black-logo.png')}}" alt="Plot Listing">
-                        </div>
-                        <p>If you consider that <a rel="nofollow" href="https://templatemo.com/tm-564-plot-listing"
-                                target="_parent">Plot Listing template</a> is useful for your website, please <a
-                                rel="nofollow" href="https://www.paypal.me/templatemo" target="_blank">support us</a> a
-                            little via PayPal.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="helpful-links">
-                        <h4>Helpful Links</h4>
-                        <div class="row">
-                            <div class="col-lg-6 col-sm-6">
-                                <ul>
-                                    <li><a href="#">Categories</a></li>
-                                    <li><a href="#">Reviews</a></li>
-                                    <li><a href="#">Listing</a></li>
-                                    <li><a href="#">Contact Us</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-lg-6">
-                                <ul>
-                                    <li><a href="#">About Us</a></li>
-                                    <li><a href="#">Awards</a></li>
-                                    <li><a href="#">Useful Sites</a></li>
-                                    <li><a href="#">Privacy Policy</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="contact-us">
-                        <h4>Contact Us</h4>
-                        <p>27th Street of New Town, Digital Villa</p>
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <a href="#">010-020-0340</a>
-                            </div>
-                            <div class="col-lg-6">
-                                <a href="#">090-080-0760</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-12">
-                    <div class="sub-footer">
-                        <p>Copyright © 2021 Plot Listing Co., Ltd. All Rights Reserved.
-                            <br>
-                            Design: <a rel="nofollow" href="https://templatemo.com" title="CSS Templates">TemplateMo</a>
-                        </p>
-                    </div>
-                </div>
+        <div class="col-lg-12">
+            <div class="sub-footer">
+                <p>STT NF - SISTEM INFORMASI GEOGRAFIS - UAS 2025 <br> Design by: <a rel="nofollow" href="https://templatemo.com" title="CSS Templates">TemplateMo</a>
+                </p>
             </div>
         </div>
     </footer>

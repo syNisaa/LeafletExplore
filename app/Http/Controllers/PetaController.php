@@ -48,6 +48,16 @@ class PetaController extends Controller
         ]);
     }
 
+    public function data(){
+        $list_gunung = Gunung::all();
+        $list_provinsi = Provinsi::all();
+        $list_bandara = Bandara::all();
+        $list_bali = Bali::all();
+        return view('templateUser.alldata',[
+            'list_provinsi' => $list_provinsi, 'list_gunung' => $list_gunung, 'list_bandara' => $list_bandara, 'list_bali' => $list_bali 
+        ]);
+    }
+
 
     public function explore(){
         $list_provinsi = Provinsi::all();

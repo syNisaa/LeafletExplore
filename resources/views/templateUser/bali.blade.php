@@ -85,13 +85,15 @@ https://templatemo.com/tm-564-plot-listing
                 <div class="col-12">
                     <nav class="main-nav">
                         <!-- ***** Logo Start ***** -->
-                        <a href="index.html" class="logo"></a>
+                        <a href="/" class="logo">
+                        <img src="{{asset('css/assets/images/logo.png')}}" alt="">
+                        </a>
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
                             <li><a href="/" class="active">General Indonesia</a></li>
                             <li><a href="/bali">Discover Bali</a></li>
-                            <li><a href="listing.html">All Data</a></li>
+                            <li><a href="/alldata">All Data</a></li>
                             <li><a href="/team">Our Team</a></li>
                             <li>
                                 <div class="main-white-button"><a href="/admin">ADMIN</a></div>

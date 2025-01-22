@@ -27,6 +27,8 @@ Route::get('/bali',[PetaController::class, 'bali']);
 
 Route::get('/peta',[PetaController::class, 'index']);
 
+Route::get('/alldata',[PetaController::class, 'data']);
+
 Route::get('/coba',[PetaController::class, 'coba']);
 
 Route::get('/team', function () {
