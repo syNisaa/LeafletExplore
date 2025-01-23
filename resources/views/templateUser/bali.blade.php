@@ -4,33 +4,137 @@
 <head>
     <!-- Leaflet -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""></style>
+
     <style>
-        body{
-            font-family:'Times New Roman';
+        .info {
+            padding: 6px 8px;
+            font: 14px/16px Arial, Helvetica, sans-serif;
+            background: white;
+            background: rgba(255,255,255,0.8);
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+            border-radius: 5px;
+        }
+        .info h4 {
+            margin: 0 0 5px;
+            color: #777;
         }
 
-        #map {
+        .legend {
+            line-height: 18px;
+            color: #555;
+        }
+        .legend i {
+            width: 18px;
+            height: 18px;
+            float: left;
+            margin-right: 8px;
+            opacity: 0.7;
+        }
+
+        /* 2 */
+        .info2 {
+            padding: 6px 8px;
+            font: 14px/16px Arial, Helvetica, sans-serif;
+            background: white;
+            background: rgba(255,255,255,0.8);
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+            border-radius: 5px;
+        }
+        .info2 h4 {
+            margin: 0 0 5px;
+            color: #777;
+        }
+
+        .legend2 {
+            line-height: 18px;
+            color: #555;
+        }
+        .legend2 i {
+            width: 18px;
+            height: 18px;
+            float: left;
+            margin-right: 8px;
+            opacity: 0.7;
+        }
+
+        /* 3 */
+        .info3 {
+            padding: 6px 8px;
+            font: 14px/16px Arial, Helvetica, sans-serif;
+            background: white;
+            background: rgba(255,255,255,0.8);
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+            border-radius: 5px;
+        }
+        .info3 h4 {
+            margin: 0 0 5px;
+            color: #777;
+        }
+
+        .legend3 {
+            line-height: 18px;
+            color: #555;
+        }
+        .legend3 i {
+            width: 18px;
+            height: 18px;
+            float: left;
+            margin-right: 8px;
+            opacity: 0.7;
+        }
+
+        /* 3 */
+        .info4 {
+            padding: 6px 8px;
+            font: 14px/16px Arial, Helvetica, sans-serif;
+            background: white;
+            background: rgba(255,255,255,0.8);
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+            border-radius: 5px;
+        }
+        .info4 h4 {
+            margin: 0 0 5px;
+            color: #777;
+        }
+
+        .legend4 {
+            line-height: 18px;
+            color: #555;
+        }
+        .legend4 i {
+            width: 18px;
+            height: 18px;
+            float: left;
+            margin-right: 8px;
+            opacity: 0.7;
+        }
+    </style>
+
+    <style>
+
+        #mapjs1 {
             height: 400px;
             width: 450px;
         }
 
-        #map2 {
+        #mapjs2 {
             height: 400px;
             width: 450px;
         }
 
-        #map3 {
+        #mapjs3 {
             height: 400px;
             width: 450px;
         }
 
-        #map4 {
+        #mapjs4 {
             height: 400px;
             width: 450px;
         }
 
     </style>
+
     <!-- Make sure you put this AFTER Leaflet's CSS -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
@@ -44,7 +148,7 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
 
-    <title>Plot Listing HTML5 Website Template</title>
+    <title>EXPLORE BALI - INDONESIA</title>
 
     <!-- Bootstrap core CSS -->
     <link href="{{asset('css/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
@@ -91,8 +195,8 @@ https://templatemo.com/tm-564-plot-listing
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
-                            <li><a href="/" class="active">General Indonesia</a></li>
-                            <li><a href="/bali">Discover Bali</a></li>
+                            <li><a href="/">General Indonesia</a></li>
+                            <li><a href="/bali"  class="active">Discover Bali</a></li>
                             <li><a href="/alldata">All Data</a></li>
                             <li><a href="/team">Our Team</a></li>
                             <li>
@@ -119,244 +223,123 @@ https://templatemo.com/tm-564-plot-listing
                         <div class="grid">
                             <div class="row">
                                 <div class="col-lg-3">
+
                                     <div class="menu">
                                         <div class="first-thumb active">
                                             <div class="thumb">
                                                 <span class="icon"><img
-                                                        src="{{asset('css/assets/images/search-icon-02.png')}}"
+                                                        src="{{asset('css/assets/images/bali.png')}}"
                                                         alt=""></span>
-                                                Provinsi
+                                                Luas Wilayah Bali
                                             </div>
                                         </div>
                                         <div>
                                             <div class="thumb">
                                                 <span class="icon"><img
-                                                        src="{{asset('css/assets/images/search-icon-03.png')}}"
+                                                        src="{{asset('css/assets/images/kepadatan.png')}}"
                                                         alt=""></span>
-                                                <!-- Bahasa Daerah, Makanan Daerah Penduduk-->
-                                                Gempa Bumi
+                                                Kepadatan Penduduk
                                             </div>
                                         </div>
                                         <div>
                                             <div class="thumb">
                                                 <span class="icon"><img
-                                                        src="{{asset('css/assets/images/search-icon-04.png')}}"
+                                                        src="{{asset('css/assets/images/wisata.png')}}"
                                                         alt=""></span>
-                                                ---
+                                                Wisata Bali
                                             </div>
                                         </div>
                                         <div class="last-thumb">
                                             <div class="thumb">
                                                 <span class="icon"><img
-                                                        src="{{asset('css/assets/images/search-icon-05.png')}}"
+                                                        src="{{asset('css/assets/images/provinsi.png')}}"
                                                         alt=""></span>
-                                                Traveling
+                                                Pantai Bali
                                             </div>
                                         </div>
                                     </div>
+
                                 </div>
                                 <div class="col-lg-9 align-self-center">
                                     <ul class="nacc">
+
+                                        <!-- Wilayah Bali - mapjs1 -->
                                         <li class="active">
                                             <div>
                                                 <div class="thumb">
                                                     <div class="row">
                                                         <div class="col-lg-5 align-self-center">
                                                             <div class="left-text">
-                                                                <h4>Populasi In Bali</h4>
-                                                                <p>You can feel free to download, edit and apply this
-                                                                    template for your website. Please tell your friends
-                                                                    about TemplateMo website.</p>
+                                                                <h4>9 - Wilayah Bali</h4>
+                                                                <p>Bali memiliki 9 wilayah yang memikat. Denpasar, pusat budaya modern; Badung, surga pantai; Gianyar, seni dan tradisi; Tabanan, sawah dan pura indah; Bangli, Danau Batur nan damai; Karangasem, Gunung Agung megah; Klungkung, sejarah Bali; Buleleng, pantai utara eksotis; dan Jembrana, pesona alam liar.</p>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-7 align-self-center container">
-                                                            <div class="right-image map" id="map">
-                                                                <script>
-                                                                    var map2 = L.map('map').setView([-8.4535602, 114.4120211], 9);
-                                                                    L.tileLayer(
-                                                                        'https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                                                                            maxZoom: 15,
-                                                                            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-                                                                        }).addTo(map2);
-
-                                                                    const regencies = @json($list_bali);
-
-                                                                    const regencyData = regencies.map(regency => ({
-                                                                        type: "Feature",
-                                                                        properties: {
-                                                                            name: regency.nama,
-                                                                            id: regency.id,
-                                                                        },
-                                                                        geometry: {
-                                                                            type: regency.type_polygon,
-                                                                            coordinates: JSON.parse(regency.polygon),
-                                                                        }
-                                                                    }));
-
-                                                                    const data= {
-                                                                        type: "FeatureCollection",
-                                                                        features: regencyData,
-                                                                    };
-
-                                                                    L.geoJson(data).addTo(map2);
-                                                                </script>
-                                                            </div>
+                                                            <div class="right-image map" id="mapjs1">                
+                                                        </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                         </li>
+
+                                        <!-- Kepadatan -->
                                         <li>
                                             <div>
                                                 <div class="thumb">
                                                     <div class="row">
                                                         <div class="col-lg-5 align-self-center">
                                                             <div class="left-text">
-                                                                <h4>Bencana Alam - Gempa Bumi</h4>
-                                                                <p>Plot Listing is a responsive Bootstrap 5 website
-                                                                    template that included 4 different HTML pages. This
-                                                                    template is provided by TemplateMo website. You can
-                                                                    apply this layout for your static or dynamic CMS
-                                                                    websites.</p>
-                                                                <div class="main-white-button"><a href="#"><i
-                                                                            class="fa fa-eye"></i> Discover More</a>
-                                                                </div>
+                                                                <h4>Luas <sup>vs</sup> Populasi</h4>
+                                                                <p>Bali memiliki kepadatan penduduk rata-rata sekitar 750-850 jiwa/km². Wilayah paling padat adalah Denpasar, dengan kepadatan hingga 6000 jiwa/km², karena menjadi pusat ekonomi dan budaya. Sementara itu, Bangli dan Jembrana lebih jarang penduduk, sekitar 200-400 jiwa/km², karena banyak area pegunungan dan hutan. </p>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-7 align-self-center">
-                                                            <div class="right-image" id="map2">
-                                                                <script>
-                                                                    var map = L.map('map2').setView([-
-                                                                        0.3155398750904368,
-                                                                        117.1371634207888
-                                                                    ], 5);
-                                                                    L.tileLayer(
-                                                                        'https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                                                                            maxZoom: 5,
-                                                                            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-                                                                        }).addTo(map);
-
-                                                                    let datas = {!!file_get_contents("https://data.bmkg.go.id/DataMKG/TEWS/gempaterkini.json") !!}
-                                                                    console.log(datas);
-
-                                                                    let gempas = datas.Infogempa.gempa;
-                                                                    let number = 1;
-                                                                    gempas.forEach(gempa => {
-                                                                        let koordinat = gempa.Coordinates.split(
-                                                                            ",");
-                                                                        let _lat = koordinat[0];
-                                                                        let _lon = koordinat[1];
-                                                                        let marker = L.marker([_lat, _lon])
-                                                                            .addTo(map);
-
-                                                                        marker.bindPopup(" Wilayah : " + gempa
-                                                                            .Wilayah + "<br>Waktu : " +
-                                                                            gempa.Tanggal + "<br> Jam :" +
-                                                                            gempa.Jam +
-                                                                            "<br> Kedalaman Pergeseran : " +
-                                                                            gempa.Kedalaman +
-                                                                            "<br> Lintang Wilayah : " +
-                                                                            gempa.Lintang +
-                                                                            "<br> Potensi : " + gempa
-                                                                            .Potensi +
-                                                                            "<br><b> Magnitudo : " + gempa
-                                                                            .Magnitude);
-                                                                    });
-
-                                                                </script>
-                                                            </div>
+                                                            <div class="right-image" id="mapjs2"></div>
                                                         </div>
                                                     </div>
                                                 </div>
+                                            </div>
                                         </li>
+
+                                        <!-- Wisata -->
                                         <li>
                                             <div>
                                                 <div class="thumb">
                                                     <div class="row">
                                                         <div class="col-lg-5 align-self-center">
                                                             <div class="left-text">
-                                                                <h4>Gunung Berapi Aktif Di Indonesia</h4>
-                                                                <p>Did you know? You can get the best free HTML
-                                                                    templates on Too CSS blog. Visit the blog pages and
-                                                                    explore fresh and latest website templates.</p>
-                                                                <div class="main-white-button"><a href="listing.html"><i
-                                                                            class="fa fa-eye"></i> More Listing</a>
-                                                                </div>
+                                                                <h4>Bali: Harmoni Alam dan Budaya</h4>
+                                                                <p>Balimenawarkan keindahan wisata yang memadukan pantai menawan, sawah hijau, dan pura megah. Kekayaan budaya, tarian, dan tradisi adat melengkapi pesona alamnya, menjadikan Bali destinasi impian yang memikat hati wisatawan.</p>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-7 align-self-center">
-                                                            <div class="right-image map" id="map3">
-                                                                <script>
-                                                                    var map3 = L.map('map3').setView([-7.2399502,111.6459185
-                                                                    ], 7);
-                                                                    L.tileLayer(
-                                                                        'https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                                                                            maxZoom: 15,
-                                                                            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-                                                                        }).addTo(map3);
-
-                                                                    var gunung = @json($list_gunung);
-                                                                    // console.log(gunung);
-                                                                    gunung.forEach(function (gunung) {
-                                                                        var circle = L.circle([gunung.latitude,gunung.longitude], {
-                                                                            color: 'red',
-                                                                            fillColor: '#f03',
-                                                                            fillOpacity: 0.5,
-                                                                            radius: 7000
-                                                                        }).addTo(map3);
-                                                                        // var marker = L.marker([gunung.latitude,gunung.longitude]).addTo(map3);
-                                                                        circle.bindPopup(" <b>Gunung  " +gunung.nama + "</b><br> Tinggi Gunung : " +gunung.tinggi_meter + " Meter <br> Estimasi Letusan Terakhir : " +gunung.estimasi_letusan_terakhir);
-                                                                    });
-
-                                                                </script>
-                                                            </div>
+                                                            <div class="right-image" id="mapjs3"></div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </li>
+                                        
+                                        <!-- Pantai -->
                                         <li>
                                             <div>
-                                            <div class="thumb">
-                                                <div class="row">
-                                                    <div class="col-lg-5 align-self-center">
-                                                    <div class="left-text">
-                                                        <h4>17 - Bandara Di Indonesia</h4>
-                                                        <p>Image credits go to Unsplash website that provides free stock photos for anyone. Images used in this Plot Listing template are from Unsplash.</p>
-                                                        <div class="main-white-button"><a href="#"><i class="fa fa-eye"></i> Discover More</a></div>
-                                                    </div>
-                                                    </div>
-                                                    <div class="col-lg-7 align-self-center">
-                                                            <div class="right-image map" id="map4">
-                                                                <script>
-                                                                    var map4 = L.map('map4').setView([-4.4700565,109.0664455
-                                                                    ], 6);
-                                                                    L.tileLayer(
-                                                                        'https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                                                                            maxZoom: 15,
-                                                                            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-                                                                        }).addTo(map4);
-
-                                                                    var bandara = @json($list_bandara);
-                                                                    // console.log(bandara);
-                                                                    bandara.forEach(function (bandara) {
-                                                                        var circle2 = L.circle([bandara.latitude,bandara.longitude], {
-                                                                            color: 'blue',
-                                                                            fillColor: '#b1b1fc',
-                                                                            fillOpacity: 0.5,
-                                                                            radius: 15000
-                                                                        }).addTo(map4);
-                                                                        // var marker = L.marker([bandara.latitude,bandara.longitude]).addTo(map4);
-                                                                        circle2.bindPopup(" <b>Bandara  " +bandara.nama + "</b><br> Provinsi: " +bandara.provinsi );
-                                                                    });
-
-                                                                </script>
+                                                <div class="thumb">
+                                                    <div class="row">
+                                                        <div class="col-lg-5 align-self-center">
+                                                            <div class="left-text">
+                                                                <h4>Pantai Bali: Destinasi Tropis dengan Pesona Abadi</h4>
+                                                                <p>Setiap pantai memiliki karakter unik yang memikat wisatawan. Kejernihan air laut, pemandangan matahari terbenam, dan keramahan budaya lokal menjadikan pantai-pantai di Bali destinasi tropis yang selalu dikenang. Baik untuk berselancar, snorkeling, atau sekadar bersantai, pesona abadi pantai Bali selalu memanjakan siapa saja yang datang.</p>
                                                             </div>
-                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-7 align-self-center">
+                                                            <div class="right-image" id="mapjs4"></div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </li>
+
+
                                     </ul>
                                 </div>
                             </div>
@@ -367,71 +350,19 @@ https://templatemo.com/tm-564-plot-listing
         </div>
     </div>
 
+    <!-- Mapjs1 -> LuasWilayah -->
+    <script> 
+        const dataBali = @json($list_bali);
+    </script>
+    
+    @include('templateUSer.jspantai');
+    @include('templateUSer.jswisata');
+    @include('templateUSer.jskepadatan');
+    @include('templateUSer.jswilayah');
 
+    <!-- Mapjs2 -> Kepadatan -->
 
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="about">
-                        <div class="logo">
-                            <img src="{{asset('css/assets/images/black-logo.png')}}" alt="Plot Listing">
-                        </div>
-                        <p>If you consider that <a rel="nofollow" href="https://templatemo.com/tm-564-plot-listing"
-                                target="_parent">Plot Listing template</a> is useful for your website, please <a
-                                rel="nofollow" href="https://www.paypal.me/templatemo" target="_blank">support us</a> a
-                            little via PayPal.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="helpful-links">
-                        <h4>Helpful Links</h4>
-                        <div class="row">
-                            <div class="col-lg-6 col-sm-6">
-                                <ul>
-                                    <li><a href="#">Categories</a></li>
-                                    <li><a href="#">Reviews</a></li>
-                                    <li><a href="#">Listing</a></li>
-                                    <li><a href="#">Contact Us</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-lg-6">
-                                <ul>
-                                    <li><a href="#">About Us</a></li>
-                                    <li><a href="#">Awards</a></li>
-                                    <li><a href="#">Useful Sites</a></li>
-                                    <li><a href="#">Privacy Policy</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="contact-us">
-                        <h4>Contact Us</h4>
-                        <p>27th Street of New Town, Digital Villa</p>
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <a href="#">010-020-0340</a>
-                            </div>
-                            <div class="col-lg-6">
-                                <a href="#">090-080-0760</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-12">
-                    <div class="sub-footer">
-                        <p>Copyright © 2021 Plot Listing Co., Ltd. All Rights Reserved.
-                            <br>
-                            Design: <a rel="nofollow" href="https://templatemo.com" title="CSS Templates">TemplateMo</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
+    <!-- Mapjs3 -> Wisata -->
 
     <!-- Scripts -->
     <script src="{{asset('css/vendor/jquery/jquery.min.js')}}"></script>
