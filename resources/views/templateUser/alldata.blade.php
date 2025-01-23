@@ -274,9 +274,9 @@ https://templatemo.com/tm-564-plot-listing
                 <thead>
                     <tr>
                     <th scope="col">Nama </th>
-                    <th scope="col">Luas</th>
-                    <th scope="col">Populasi</th>
-                    <th scope="col">Kepadatan</th>
+                    <th scope="col">Provinsi</th>
+                    <th scope="col">Latitude</th>
+                    <th scope="col">Longitude</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -312,7 +312,7 @@ https://templatemo.com/tm-564-plot-listing
                 <thead>
                     <tr>
                     <th scope="col">Nama </th>
-                    <th scope="col">Luas</th>
+                    <th scope="col">Provinsi</th>
                     <th scope="col">Populasi</th>
                     <th scope="col">Kepadatan</th>
                     <th scope="col">Wisata Favorite</th>
